@@ -1,0 +1,227 @@
+{
+  "name": "G1X Four Multi-Effects",
+  "slug": "zoom-g1x-four",
+  "type": "compound",
+  "dimensions": {
+    "width": 309.87999999999994,
+    "depth": 165.1,
+    "height": 66.03999999999999
+  },
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "material": {
+    "type": "standard",
+    "color": "#dc2626",
+    "roughness": 0.8,
+    "metalness": 0.1
+  },
+  "components": [
+    {
+      "name": "knob-0",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 8,
+        "height": 6,
+        "depth": 8
+      },
+      "position": {
+        "x": -139.93999999999997,
+        "y": 8,
+        "z": 57.55
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#1f2937",
+        "roughness": 0.3,
+        "metalness": 0.7
+      }
+    },
+    {
+      "name": "knob-1",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 8,
+        "height": 6,
+        "depth": 8
+      },
+      "position": {
+        "x": 139.93999999999997,
+        "y": 8,
+        "z": 57.55
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#1f2937",
+        "roughness": 0.3,
+        "metalness": 0.7
+      }
+    },
+    {
+      "name": "knob-2",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 8,
+        "height": 6,
+        "depth": 8
+      },
+      "position": {
+        "x": -139.93999999999997,
+        "y": 8,
+        "z": 37.55
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#1f2937",
+        "roughness": 0.3,
+        "metalness": 0.7
+      }
+    },
+    {
+      "name": "knob-3",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 8,
+        "height": 6,
+        "depth": 8
+      },
+      "position": {
+        "x": 139.93999999999997,
+        "y": 8,
+        "z": 37.55
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#1f2937",
+        "roughness": 0.3,
+        "metalness": 0.7
+      }
+    },
+    {
+      "name": "footswitch",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 12,
+        "height": 4,
+        "depth": 12
+      },
+      "position": {
+        "x": 0,
+        "y": 4,
+        "z": -62.55
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#374151",
+        "roughness": 0.2,
+        "metalness": 0.8
+      }
+    },
+    {
+      "name": "input-jack",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 6.35,
+        "height": 10,
+        "depth": 6.35
+      },
+      "position": {
+        "x": -149.93999999999997,
+        "y": 33.019999999999996,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 1.5707963267948966
+      },
+      "material": {
+        "type": "standard",
+        "color": "#000000",
+        "roughness": 0.1,
+        "metalness": 0.9
+      }
+    },
+    {
+      "name": "output-jack",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 6.35,
+        "height": 10,
+        "depth": 6.35
+      },
+      "position": {
+        "x": 149.93999999999997,
+        "y": 33.019999999999996,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 1.5707963267948966
+      },
+      "material": {
+        "type": "standard",
+        "color": "#000000",
+        "roughness": 0.1,
+        "metalness": 0.9
+      }
+    },
+    {
+      "name": "led",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "position": {
+        "x": 0,
+        "y": 67.03999999999999,
+        "z": 72.55
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "basic",
+        "color": "#ef4444",
+        "opacity": 0.8
+      }
+    }
+  ]
+}

@@ -3,82 +3,128 @@ description:
 globs: 
 alwaysApply: false
 ---
-# Stompboard Project Memory
+# StompBoard 3D Pedal Modeling Agent
 
 ## Project Overview
-- **Tech Stack**: React 18 + TypeScript + Vite + Tailwind CSS + Headless UI
-- **Purpose**: Display guitar pedal stomp board information with modern UI
-- **Deployment**: GitHub Actions to Vercel (free hosting)
+This project creates simple 3D models of guitar pedals in JSON format for use with Three.js. The agent's job is to help create and manage these 3D models using a simple but effective JSON-based format.
 
-## Key Features
-1. **Pedal Management**: Each pedal is a JSON file in `pedals/` directory
-2. **Dynamic Routing**: Each pedal gets a page at `/pedal-name` URL
-3. **Search & Add**: Command system to find and add pedals via `npm run add-pedal`
-4. **Modern UI**: Using Headless UI + Tailwind for responsive design
+## Git Commit Guidelines
+**ALL git commits MUST use conventional commit format:**
+- Format: `type(scope): description`
+- Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+- Examples:
+  - `feat(3d): add simple box geometry for guitar pedals`
+  - `fix(models): correct dimensions for Walrus Audio pedals`
+  - `docs(readme): update 3D modeling instructions`
 
-## Pedal JSON Structure
+## 3D Model JSON Format
+
+### Simple 3D Model Schema
 ```json
 {
-  "name": "Pedal Name",
-  "manufacturer": "Brand Name",
-  "type": "fuzz|distortion|reverb|delay|overdrive|chorus|etc",
-  "milliAmps": 50,
-  "voltage": 9,
-  "imageUrl": "https://example.com/image.jpg",
-  "price": 199.99,
-  "description": "Brief description",
-  "controls": ["Volume", "Tone", "Gain"],
-  "dimensions": "4.7\" x 2.6\" x 2.1\"",
-  "weight": "0.5 lbs",
-  "bypass": "True Bypass",
-  "year": 2023
+  "name": "string",
+  "type": "box" | "cylinder" | "compound",
+  "dimensions": {
+    "width": "number (mm)",
+    "height": "number (mm)", 
+    "depth": "number (mm)"
+  },
+  "position": {
+    "x": "number",
+    "y": "number", 
+    "z": "number"
+  },
+  "rotation": {
+    "x": "number (radians)",
+    "y": "number (radians)",
+    "z": "number (radians)" 
+  },
+  "color": "hex color string",
+  "material": {
+    "type": "basic" | "standard" | "physical",
+    "roughness": "number (0-1)",
+    "metalness": "number (0-1)",
+    "opacity": "number (0-1)"
+  },
+  "components": [
+    {
+      "name": "string",
+      "type": "box" | "cylinder" | "plane",
+      "dimensions": "object",
+      "position": "object",
+      "rotation": "object",
+      "color": "string",
+      "material": "object"
+    }
+  ]
 }
 ```
 
-## Commands Available
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run add-pedal` - Interactive pedal search and add
+### Guitar Pedal Reference Dimensions
+Based on Walrus Audio pedal specs:
+- Standard size: 121mm (L) x 66mm (W) x 41mm (H)
+- Large size: 122mm (L) x 74mm (W) x 59mm (H) 
 
-## Project Structure
-```
-stompboard/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── types/
-│   ├── utils/
-│   └── App.tsx
-├── pedals/
-├── public/
-└── scripts/
+### Component Types
+- **Main Body**: Primary pedal enclosure
+- **Footswitch**: Clickable switch (typically 12mm diameter cylinder)
+- **Knobs**: Control knobs (typically 6-8mm diameter cylinders)
+- **Jacks**: Input/output jacks (6.35mm diameter cylinders)
+- **LED**: Status indicator (2mm diameter cylinder)
+- **Label**: Text area (flat plane)
+
+## TypeScript Integration
+
+### Model Loader Interface
+```typescript
+interface PedalModel3D {
+  name: string;
+  slug: string;
+  modelData: ModelJSON;
+}
+
+interface Three3DScene {
+  loadPedalModel(modelPath: string): THREE.Group;
+  createPedalFromJSON(modelData: ModelJSON): THREE.Group;
+  renderPedalBoard(pedals: PedalModel3D[]): void;
+}
 ```
 
-## Development Notes
-- Using React 18 concurrent features and Suspense
+### Required Dependencies
+- Three.js for 3D rendering
 - TypeScript for type safety
-- File-based routing for pedals
-- Responsive grid layout for pedal overview
-- Image lazy loading for performance
+- Existing React app structure
 
-## Current Status
-✅ Project structure created
-✅ React 18 + TypeScript + Vite setup
-✅ Tailwind CSS + Headless UI configured
-✅ Sample pedal JSON created
-✅ Interactive add-pedal script working
-✅ GitHub Actions workflow for Vercel deployment
-✅ All dependencies installed
-✅ Development server ready
+## File Structure
+```
+/src
+  /models
+    /pedals
+      boss-sy-1.json
+      walrus-audio-arp-87.json
+      [other-pedals].json
+  /utils
+    model-loader.ts
+    three-helpers.ts
+  /components
+    PedalBoard3D.tsx
+    PedalModel3D.tsx
+```
 
-## Next Steps for User
-1. Run `npm run dev` to start the development server
-2. Visit http://localhost:5173 to see the application
-3. Use `npm run add-pedal` to add more pedals
-4. Push to GitHub main branch to trigger deployment
+## Agent Goals
+1. Create a TypeScript script to generate simple pedal models
+2. Use actual pedal dimensions from specs
+3. Generate JSON models for all existing pedals
+4. Create Three.js loader utilities
+5. Implement 3D pedal board scene
+6. Ensure models are simple but visually recognizable
 
-## Known Limitations
-- Pedal loading currently requires manual addition to utils/index.ts
-- Search functionality in add-pedal script uses mock data
-- Need to set up Vercel secrets for deployment
+## Development Rules
+- Keep 3D models simple (boxes, cylinders, basic shapes)
+- Use realistic proportions based on actual pedal specs
+- JSON format should be easily readable and editable
+- TypeScript interfaces must be strictly typed
+- All commits must follow conventional commit format
+- Focus on functionality over visual complexity
+
 

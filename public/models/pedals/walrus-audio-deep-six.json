@@ -1,0 +1,252 @@
+{
+  "name": "Deep Six Compressor",
+  "slug": "walrus-audio-deep-six",
+  "type": "compound",
+  "dimensions": {
+    "width": 121.15799999999999,
+    "depth": 66.03999999999999,
+    "height": 35.306
+  },
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "material": {
+    "type": "standard",
+    "color": "#059669",
+    "roughness": 0.8,
+    "metalness": 0.1
+  },
+  "components": [
+    {
+      "name": "knob-0",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 8,
+        "height": 6,
+        "depth": 8
+      },
+      "position": {
+        "x": -45.57899999999999,
+        "y": 8,
+        "z": 8.019999999999996
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#1f2937",
+        "roughness": 0.3,
+        "metalness": 0.7
+      }
+    },
+    {
+      "name": "knob-1",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 8,
+        "height": 6,
+        "depth": 8
+      },
+      "position": {
+        "x": 0,
+        "y": 8,
+        "z": 8.019999999999996
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#1f2937",
+        "roughness": 0.3,
+        "metalness": 0.7
+      }
+    },
+    {
+      "name": "knob-2",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 8,
+        "height": 6,
+        "depth": 8
+      },
+      "position": {
+        "x": 45.57899999999999,
+        "y": 8,
+        "z": 8.019999999999996
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#1f2937",
+        "roughness": 0.3,
+        "metalness": 0.7
+      }
+    },
+    {
+      "name": "knob-3",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 8,
+        "height": 6,
+        "depth": 8
+      },
+      "position": {
+        "x": -45.57899999999999,
+        "y": 8,
+        "z": -11.980000000000004
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#1f2937",
+        "roughness": 0.3,
+        "metalness": 0.7
+      }
+    },
+    {
+      "name": "knob-4",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 8,
+        "height": 6,
+        "depth": 8
+      },
+      "position": {
+        "x": 0,
+        "y": 8,
+        "z": -11.980000000000004
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#1f2937",
+        "roughness": 0.3,
+        "metalness": 0.7
+      }
+    },
+    {
+      "name": "footswitch",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 12,
+        "height": 4,
+        "depth": 12
+      },
+      "position": {
+        "x": 0,
+        "y": 4,
+        "z": -13.019999999999996
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "standard",
+        "color": "#374151",
+        "roughness": 0.2,
+        "metalness": 0.8
+      }
+    },
+    {
+      "name": "input-jack",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 6.35,
+        "height": 10,
+        "depth": 6.35
+      },
+      "position": {
+        "x": -55.57899999999999,
+        "y": 17.653,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 1.5707963267948966
+      },
+      "material": {
+        "type": "standard",
+        "color": "#000000",
+        "roughness": 0.1,
+        "metalness": 0.9
+      }
+    },
+    {
+      "name": "output-jack",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 6.35,
+        "height": 10,
+        "depth": 6.35
+      },
+      "position": {
+        "x": 55.57899999999999,
+        "y": 17.653,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 1.5707963267948966
+      },
+      "material": {
+        "type": "standard",
+        "color": "#000000",
+        "roughness": 0.1,
+        "metalness": 0.9
+      }
+    },
+    {
+      "name": "led",
+      "type": "cylinder",
+      "dimensions": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "position": {
+        "x": 0,
+        "y": 36.306,
+        "z": 23.019999999999996
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": {
+        "type": "basic",
+        "color": "#ef4444",
+        "opacity": 0.8
+      }
+    }
+  ]
+}
