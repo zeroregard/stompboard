@@ -1,0 +1,16 @@
+{
+  "name": "SY-1 Synthesizer",
+  "manufacturer": "Boss",
+  "type": "other",
+  "milliAmps": 115,
+  "voltage": 9,
+  "imageUrl": "/images/boss-sy-1.jpg",
+  "price": 222,
+  "description": "Authentic BOSS polyphonic guitar synth in a compact pedal. 121 total sounds with no programming knowledge needed. Latency-free performance with analog-style synth sounds.",
+  "controls": ["Type", "Variation", "Tone/Rate", "Depth", "Effect", "Direct"],
+  "dimensions": "2.87\" x 5.13\" x 2.38\"",
+  "weight": "1 lb",
+  "bypass": "Buffered bypass",
+  "year": 2018,
+  "slug": "boss-sy-1"
+} 

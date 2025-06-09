@@ -1,0 +1,16 @@
+{
+  "name": "ARP-87 Multi-Function Delay",
+  "manufacturer": "Walrus Audio",
+  "type": "delay",
+  "milliAmps": 60,
+  "voltage": 9,
+  "imageUrl": "/images/walrus-audio-arp-87.jpg",
+  "price": 209,
+  "description": "Versatile delay pedal with five different delay algorithms including digital, analog, slap-back, reverse, and octave-down delays. Features tap tempo and expression control.",
+  "controls": ["Mix", "Time", "Repeats", "X Knob", "Mode Switch"],
+  "dimensions": "4.77\" x 2.6\" x 1.39\"",
+  "weight": "1.1 lbs",
+  "bypass": "True Bypass",
+  "year": 2016,
+  "slug": "walrus-audio-arp-87"
+} 

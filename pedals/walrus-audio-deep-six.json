@@ -1,0 +1,16 @@
+{
+  "name": "Deep Six Compressor",
+  "manufacturer": "Walrus Audio",
+  "type": "compressor",
+  "milliAmps": 9,
+  "voltage": 9,
+  "imageUrl": "/images/walrus-audio-deep-six.jpg",
+  "price": 199,
+  "description": "Optical compressor with internal voltage booster providing clean headroom. Features attack, release, ratio, and level controls for precise compression shaping.",
+  "controls": ["Level", "Sustain", "Attack", "Ratio", "Blend"],
+  "dimensions": "4.77\" x 2.6\" x 1.39\"",
+  "weight": "1.1 lbs",
+  "bypass": "True Bypass",
+  "year": 2015,
+  "slug": "walrus-audio-deep-six"
+} 

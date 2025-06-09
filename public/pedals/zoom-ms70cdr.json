@@ -1,0 +1,16 @@
+{
+  "name": "MS70CDR MultiStomp",
+  "manufacturer": "Zoom",
+  "type": "other",
+  "milliAmps": 170,
+  "voltage": 9,
+  "imageUrl": "/images/zoom-ms70cdr.jpg",
+  "price": 129,
+  "description": "Compact multi-effects pedal with 86 effects including chorus, delay, and reverb. Features true stereo processing and can run up to 6 effects simultaneously.",
+  "controls": ["Parameter Knobs", "Effect Select", "On/Off Switch"],
+  "dimensions": "5.1\" x 3.4\" x 2.3\"",
+  "weight": "1.2 lbs",
+  "bypass": "True Bypass",
+  "year": 2013,
+  "slug": "zoom-ms70cdr"
+} 

@@ -1,0 +1,84 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Stompboard Project Memory
+
+## Project Overview
+- **Tech Stack**: React 18 + TypeScript + Vite + Tailwind CSS + Headless UI
+- **Purpose**: Display guitar pedal stomp board information with modern UI
+- **Deployment**: GitHub Actions to Vercel (free hosting)
+
+## Key Features
+1. **Pedal Management**: Each pedal is a JSON file in `pedals/` directory
+2. **Dynamic Routing**: Each pedal gets a page at `/pedal-name` URL
+3. **Search & Add**: Command system to find and add pedals via `npm run add-pedal`
+4. **Modern UI**: Using Headless UI + Tailwind for responsive design
+
+## Pedal JSON Structure
+```json
+{
+  "name": "Pedal Name",
+  "manufacturer": "Brand Name",
+  "type": "fuzz|distortion|reverb|delay|overdrive|chorus|etc",
+  "milliAmps": 50,
+  "voltage": 9,
+  "imageUrl": "https://example.com/image.jpg",
+  "price": 199.99,
+  "description": "Brief description",
+  "controls": ["Volume", "Tone", "Gain"],
+  "dimensions": "4.7\" x 2.6\" x 2.1\"",
+  "weight": "0.5 lbs",
+  "bypass": "True Bypass",
+  "year": 2023
+}
+```
+
+## Commands Available
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run add-pedal` - Interactive pedal search and add
+
+## Project Structure
+```
+stompboard/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── types/
+│   ├── utils/
+│   └── App.tsx
+├── pedals/
+├── public/
+└── scripts/
+```
+
+## Development Notes
+- Using React 18 concurrent features and Suspense
+- TypeScript for type safety
+- File-based routing for pedals
+- Responsive grid layout for pedal overview
+- Image lazy loading for performance
+
+## Current Status
+✅ Project structure created
+✅ React 18 + TypeScript + Vite setup
+✅ Tailwind CSS + Headless UI configured
+✅ Sample pedal JSON created
+✅ Interactive add-pedal script working
+✅ GitHub Actions workflow for Vercel deployment
+✅ All dependencies installed
+✅ Development server ready
+
+## Next Steps for User
+1. Run `npm run dev` to start the development server
+2. Visit http://localhost:5173 to see the application
+3. Use `npm run add-pedal` to add more pedals
+4. Push to GitHub main branch to trigger deployment
+
+## Known Limitations
+- Pedal loading currently requires manual addition to utils/index.ts
+- Search functionality in add-pedal script uses mock data
+- Need to set up Vercel secrets for deployment
+

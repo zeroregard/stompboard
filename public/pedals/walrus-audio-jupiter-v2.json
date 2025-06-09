@@ -1,0 +1,16 @@
+{
+  "name": "Jupiter Multi-Clip Fuzz V2",
+  "manufacturer": "Walrus Audio",
+  "type": "fuzz",
+  "milliAmps": 10,
+  "voltage": 9,
+  "imageUrl": "/images/walrus-audio-jupiter-v2.jpg",
+  "price": 189,
+  "description": "A true bypass fuzz pedal inspired by the desire for gritty, thick and loud fuzz. Features three different clipping diode arrangements and a bass cut toggle switch for versatile tonal shaping.",
+  "controls": ["Volume", "Tone", "Fuzz", "Mode Switch", "Bass Cut Toggle"],
+  "dimensions": "4.77\" x 2.9\" x 2.3\"",
+  "weight": "1.2 lbs",
+  "bypass": "True Bypass",
+  "year": 2017,
+  "slug": "walrus-audio-jupiter-v2"
+} 

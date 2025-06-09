@@ -1,0 +1,16 @@
+{
+  "name": "G1X Four Multi-Effects",
+  "manufacturer": "Zoom",
+  "type": "other",
+  "milliAmps": 500,
+  "voltage": 9,
+  "imageUrl": "/images/zoom-g1x-four.jpg",
+  "price": 99,
+  "description": "Comprehensive multi-effects processor with over 70 effects and amp models. Features expression pedal, built-in drum machine, and looper functionality.",
+  "controls": ["Parameter Knobs", "Effect Select", "Expression Pedal", "Footswitches"],
+  "dimensions": "12.2\" x 6.5\" x 2.6\"",
+  "weight": "2.9 lbs",
+  "bypass": "Buffered",
+  "year": 2018,
+  "slug": "zoom-g1x-four"
+} 
